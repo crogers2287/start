@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<script src="scripts/functions.js"></script>
+<script src="scripts/jquery-2.1.4.min.js"></script>
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+</head>
+
+<body onload="defaultfunc()">
+
+   <div class="container2">
+      <form method="get" id="search" class="formsearchbar">
+        <input id="googlesearch" type="search" name="q" class="searchbar" placeholder="Search..." autofocus="autofocus" autocomplete="off"></input>
+        <select id="searchSource" onchange="dropdownSelect()" class="searchselect">
+          <option value="https://google.ca/search" selected>Google</option>
+          <option value="https://github.com/search">Github</option>
+          <option value="http://www.reddit.com/search">Reddit</option>
+        </select>
+      </form>
+      <div class="tiles">
+       <div class="row">
+          <div class="boxes box4">
+            <h1 class="header quotes" id="bigBox">Welcome, Evan.</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="boxes box1">
+            <h2 class="header">Entertainment</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="http://www.reddit.com/" class="bigLink">Reddit Home</a></li>
+              <li><a href="http://reddit.com/r/linuxmasterrace" class="bigLink">Reddit - Linux Master Race</a></li>
+              <li><a href="http://distrowatch.com/" class="bigLink">DistroWatch</a></li>
+              <li><a href="http://espn.go.com/" class="bigLink">ESPN - Homepage</a></li>
+              <li><a href="https://www.youtube.com" class="bigLink">Youtube</a></li>
+              <li><a href="https://www.twitch.tv/directory/following" class="bigLink">Twitch.tv - Following</a></li>
+            </ul>
+          </div>
+          <div class="boxes box2">
+            <h1 class="clock" id="clock">
+              <script type="text/javascript">
+                    getSomeTime();
+                    setInterval("getSomeTime()", 1000);
+              </script>
+            </h1>
+            <hr/>
+            <h2 class="header" id="date1">
+              <script type="text/javascript">
+                getSomeDate();
+                setInterval("getSomeDate()", 100000);
+              </script>
+            </h2>
+          </div>
+          <div class="boxes box3">
+            <h2 class="header">Programming</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="http://www.thenewboston.com/videos.php" class="bigLink">TheNewBoston Tutorials</a></li>
+              <li><a href="https://github.com/" class="bigLink">Github</a></li>
+              <li><a href="http://stackoverflow.com/" class="bigLink">Stack Overflow</a></li>
+              <li><a href="http://www.reddit.com/r/learnprogramming/" class="bigLink">/r/learnprogramming</a></li>
+              <li><a href="http://www.reddit.com/r/unixporn/" class="bigLink">/r/unixporn</a></li>
+              <li><a href="http://www.codeacademy.com/" class="bigLink">Codeacademy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="boxes box1">
+            <h2 class="header">Educational</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="https://www.masconomet.org/" class="bigLink">Masconomet High School</a></li>
+              <li><a href="http://www.drive.google.com" class="bigLink">Google Drive</a></li>
+              <li><a href="https://masco.blackboard.com/webapps/login/?action=relogin" class="bigLink">Blackboard</a></li>
+              <li><a href="https://www.connection.naviance.com/family-connection/auth/login/?hsid=mrhsma" class="bigLink">Naviance</a></li>
+              <li><a href="http://www.commonapp.org" class="bigLink">The Common App</a></li>
+            </ul>
+          </div>
+          <div class="boxes box7">
+            <h2 class="header">Tools</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="https://mail.google.com" class="bigLink">Masconomet Webmail</a></li>
+              <li><a href="http://www.terminal.sexy" class="bigLink">Terminal Color Generator</a></li>
+              <li><a href="http://www.amazon.com" class="bigLink">Amazon Online Shopping</a></li>
+              <li><a href="http://www.duckduckgo.com" class="bigLink">DuckDuckGo Search</a></li>
+              <li><a href="http://www.play.spotify.com" class="bigLink">Spotify Web Player</a></li>
+              <div>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </div>
+</body>
+<footer>
+</footer>
+</html>
