@@ -178,3 +178,15 @@ li {
   width: 19%;
   margin-right: auto;
 }
+.box8 {
+
+  float: right;
+  width: 19%;
+  margin-right: auto;
+}
+.box9 {
+
+  float: left;
+  width: 19%;
+  margin-left: auto;
+}
